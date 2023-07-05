@@ -6,7 +6,7 @@ using System.Collections.Generic;
 // ----- Unity
 using UnityEngine;
 
-namespace DataStructure
+namespace DataStructure.Singly
 {
     public class CLinckeList<T> : IEnumerable<T>
     {
@@ -334,5 +334,22 @@ namespace DataStructure
             return GetEnumerator();
         }
 
+    }
+}
+
+namespace DataStructure.Doubly
+{
+    public class CLinckeList<T> : IEnumerable<T>
+    {
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
